@@ -8,14 +8,14 @@ const AboutSection = () => {
       <div className="w-full gap-8 flex flex-col lg:flex-row">
         <Flip left cascade>
           <div className="grid gap-8 px-4 lg:px-0 lg:grid-cols-2 w-full ">
-            <div className="lg:aspect-square rounded-2xl overflow-hidden cursor-pointer group">
+            <div className="lg:aspect-square rounded-2xl overflow-hidden aspect-[3/2] cursor-pointer group">
               <img
                 src="https://picsum.photos/id/239/200/300"
                 alt="image"
                 className="group-hover:scale-150 transition-all duration-300 group-hover:rotate-12 w-full"
               />
             </div>
-            <div className="lg:aspect-[1/1.5]  lg:row-span-2 lg:my-auto bg-gray-300 overflow-hidden rounded-2xl cursor-pointer group">
+            <div className="lg:aspect-[1/1.5]  lg:row-span-2 lg:my-auto bg-gray-300 overflow-hidden aspect-[3/2] rounded-2xl cursor-pointer group">
               <img
                 width="100%"
                 height="100%"
@@ -24,7 +24,7 @@ const AboutSection = () => {
                 className="group-hover:scale-150 transition-all duration-300 group-hover:rotate-12 w-full"
               />
             </div>
-            <div className="lg:aspect-square overflow-hidden transition-all duration-300 rounded-2xl cursor-pointer group">
+            <div className="lg:aspect-square overflow-hidden aspect-[3/2] transition-all duration-300 rounded-2xl cursor-pointer group">
               <img
                 src="https://picsum.photos/id/127/200/300"
                 alt="image"
