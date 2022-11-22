@@ -5,7 +5,7 @@ import { SectionLabel } from "../atoms";
 
 const Hero = () => {
   return (
-    <div className="w-full items-center justify-center gap-6 flex lg:flex-row flex-col-reverse lg:px-0 px-4 max-w-6xl mx-auto">
+    <div className="w-full items-center justify-center py-20 gap-6 flex lg:flex-row flex-col-reverse lg:px-0 px-4 max-w-6xl mx-auto">
       <div className="flex max-w-lg flex-col gap-6 mx-auto lg:mx-0">
         <SectionLabel title="By Kemenristek" />
         <h1 className="text-6xl leading-tight font-bold">
