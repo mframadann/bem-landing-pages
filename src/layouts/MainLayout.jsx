@@ -1,9 +1,10 @@
 import React from "react";
+import { Navbar } from "../components/organisms";
 
 const MainLayout = ({ children }) => {
   return (
     <>
-      <div>NAVBAR</div>
+      <Navbar />
       {children}
       <div>FOOTER</div>
     </>
