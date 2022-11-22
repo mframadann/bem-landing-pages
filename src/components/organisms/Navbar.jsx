@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import { IconClose, IconMenu, IconMoon, IconSun } from "../../assets/compSvg";
 import { ImageBEM } from "../../assets/images";
 import { NavItem } from "../../contants";
+import { DarkMode } from "../../helpers";
 
 const Navbar = () => {
   const [toogleMenu, setToogleMenu] = useState(false);
-  const [mode, setMode] = useState("Light");
+  const [colorTheme, setTheme] = DarkMode();
 
   return (
     <>
-      <section id={`navbar`} className={`bg-white border-b border-gray-100`}>
+      <section
+        id={`navbar`}
+        className={`bg-white dark:bg-slate-800 dark:text-gray-300 border-b transition-all duration-300 border-gray-100 dark:border-gray-600`}
+      >
         <div className={`max-w-6xl mx-auto px-4 xl:px-0`}>
           <div className={`flex items-center justify-between py-4`}>
             {/* Logo BEM */}
@@ -28,15 +32,15 @@ const Navbar = () => {
             </div>
 
             {/* Toogle Darkmode */}
-            {mode == "Dark" ? (
+            {colorTheme == "dark" ? (
               <IconMoon
-                onClick={() => setMode("Light")}
+                onClick={() => setTheme(colorTheme)}
                 className={`hidden lg:block w-6 fill-black hover:fill-brand cursor-pointer duration-300`}
               />
             ) : (
               <IconSun
-                onClick={() => setMode("Dark")}
-                className={`hidden lg:block w-6 stroke-black hover:stroke-brand cursor-pointer duration-300`}
+                onClick={() => setTheme(colorTheme)}
+                className={`hidden lg:block w-6 stroke-white hover:stroke-brand cursor-pointer duration-300`}
               />
             )}
 
@@ -50,7 +54,7 @@ const Navbar = () => {
             <div
               className={`${
                 !toogleMenu && "translate-x-full"
-              } fixed inset-0 z-40 bg-white transition-all duration-300`}
+              } fixed inset-0 z-40 bg-white dark:bg-slate-700 transition-all duration-300`}
             >
               <div className={`flex justify-end p-6`}>
                 <IconClose
@@ -72,21 +76,23 @@ const Navbar = () => {
               >
                 <div
                   onClick={() =>
-                    mode == "Dark" ? setMode("Light") : setMode("Dark")
+                    colorTheme == "dark"
+                      ? setTheme(colorTheme)
+                      : setTheme(colorTheme)
                   }
-                  className={`rounded-full p-4 bg-gray-50 group hover:bg-gray-200 duration-300 cursor-pointer`}
+                  className={`rounded-full p-4 bg-gray-50 dark:bg-slate-600 group hover:bg-gray-200 duration-300 cursor-pointer`}
                 >
-                  {mode == "Dark" ? (
+                  {colorTheme == "dark" ? (
                     <IconMoon
                       className={`w-6 mx-auto fill-black group-hover:fill-brand duration-300`}
                     />
                   ) : (
                     <IconSun
-                      className={`w-6 mx-auto stroke-black group-hover:stroke-brand duration-300`}
+                      className={`w-6 mx-auto stroke-black dark:stroke-white group-hover:stroke-brand duration-300`}
                     />
                   )}
                 </div>
-                <span className={`text-sm font-semibold`}>{mode}</span>
+                <span className={`text-sm font-semibold`}>{colorTheme}</span>
               </div>
             </div>
           </div>

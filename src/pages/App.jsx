@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero } from "../components/organisms";
+import { AboutSection, Hero } from "../components/organisms";
 import { MainLayout } from "../layouts";
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <>
       <MainLayout>
         <Hero />
+        <AboutSection />
       </MainLayout>
     </>
   );
