@@ -15,7 +15,7 @@ const Navbar = () => {
             {/* Logo BEM */}
             <img src={ImageBEM} alt="logo-bem" className={`w-12`} />
 
-            {/* Navbar Item */}
+            {/* Navbar Item Desktop */}
             <div className={`hidden lg:flex items-center justify-center gap-8`}>
               {NavItem.map((item, i) => (
                 <span
@@ -46,7 +46,7 @@ const Navbar = () => {
               className={`lg:hidden w-6 stroke-black cursor-pointer`}
             />
 
-            {/* Navbar Mobile */}
+            {/* Navbar Item Mobile */}
             <div
               className={`${
                 !toogleMenu && "translate-x-full"
