@@ -1,8 +1,8 @@
-import { Adcom, UkmBorderImage } from "../../assets/images";
-import { CarouselControllerButton, SectionLabel } from "../atoms";
+import { SectionLabel } from "../atoms";
 import { CardUkm } from "../molecules";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { UkmData } from "../../contants";
 
 const Ukm = () => {
   const responsive = {
@@ -13,10 +13,10 @@ const Ukm = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 700 },
       items: 2,
     },
     mobile: {
@@ -33,32 +33,27 @@ const Ukm = () => {
         </h1>
       </div>
 
-      <div className="w-full py-20 px-6 lg:px-0">
+      <div className="w-full pb-20 ">
         <Carousel
           draggable={true}
           responsive={responsive}
           infinite={true}
           keyBoardControl={true}
           transitionDuration={1000}
-          // autoPlay={true}
-          // autoPlaySpeed={1000}
           arrows={true}
           containerClass="w-full flex cursor-grab active:cursor-grabbing"
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          itemClass="lg:mx-4"
-          // centerMode={true}
+          itemClass="lg:mx-4 mx-2 m-20"
+          centerMode={true}
+          showDots={true}
         >
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
-          <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
+          {UkmData?.map((item) => (
+            <CardUkm
+              image={item.logo}
+              title={item.name}
+              socialMedia={item.socialMedia}
+            />
+          ))}
         </Carousel>
       </div>
     </div>
