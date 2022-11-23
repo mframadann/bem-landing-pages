@@ -4,3 +4,4 @@ export { default as AboutSection } from "./AboutSection";
 export { default as Ministry } from "./Ministry";
 export { default as Ukm } from "./Ukm";
 export { default as More } from "./More";
+export { default as Footer } from "./Footer";

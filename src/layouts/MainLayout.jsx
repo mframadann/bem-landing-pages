@@ -1,12 +1,12 @@
 import React from "react";
-import { Navbar } from "../components/organisms";
+import { Navbar, Footer } from "../components/organisms";
 
 const MainLayout = ({ children }) => {
   return (
     <>
       <Navbar />
       {children}
-      <div>FOOTER</div>
+      <Footer />
     </>
   );
 };
