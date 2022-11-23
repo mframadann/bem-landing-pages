@@ -1,5 +1,11 @@
 import React from "react";
-import { AboutSection, Hero, Ministry, Ukm } from "../components/organisms";
+import {
+  AboutSection,
+  Hero,
+  Ministry,
+  More,
+  Ukm,
+} from "../components/organisms";
 import { MainLayout } from "../layouts";
 
 const App = () => {
@@ -10,6 +16,7 @@ const App = () => {
         <AboutSection />
         <Ministry />
         <Ukm />
+        <More />
       </MainLayout>
     </>
   );

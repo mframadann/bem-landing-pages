@@ -2,28 +2,9 @@ import { SectionLabel } from "../atoms";
 import { CardUkm } from "../molecules";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { UkmData } from "../../contants";
+import { CarouselBreakpointsConfig, UkmData } from "../../contants";
 
 const Ukm = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 700 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
   return (
     <div className="w-full max-w-6xl py-20 mx-auto">
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-4 items-center">
@@ -36,7 +17,7 @@ const Ukm = () => {
       <div className="w-full pb-20 ">
         <Carousel
           draggable={true}
-          responsive={responsive}
+          responsive={CarouselBreakpointsConfig}
           infinite={true}
           keyBoardControl={true}
           transitionDuration={1000}
