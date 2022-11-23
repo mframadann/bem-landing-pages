@@ -35,19 +35,18 @@ const Ukm = () => {
 
       <div className="w-full py-20 px-6 lg:px-0">
         <Carousel
-          swipeable={true}
           draggable={true}
-          showDots={false}
           responsive={responsive}
           infinite={true}
           keyBoardControl={true}
-          transitionDuration={1500}
+          transitionDuration={1000}
+          // autoPlay={true}
+          // autoPlaySpeed={1000}
           arrows={true}
-          customLeftArrow={<CarouselControllerButton />}
-          customRightArrow={<CarouselControllerButton iconAlign="right" />}
           containerClass="w-full flex cursor-grab active:cursor-grabbing"
           removeArrowOnDeviceType={["tablet", "mobile"]}
           itemClass="lg:mx-4"
+          // centerMode={true}
         >
           <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />
           <CardUkm image={Adcom} title="Adcom" socialMedia="@official_adcom" />

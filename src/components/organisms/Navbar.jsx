@@ -54,9 +54,11 @@ const Navbar = () => {
             <div
               className={`${
                 !toogleMenu && "translate-x-full"
-              } fixed inset-0 z-40 bg-white dark:bg-slate-700 transition-all duration-300`}
+              } fixed inset-0 z-40 bg-white dark:bg-slate-800 transition-all duration-300`}
             >
-              <div className={`flex justify-end p-6`}>
+              <div className={`flex justify-between p-6`}>
+                {/* Logo BEM */}
+                <img src={ImageBEM} alt="logo-bem" className={`w-12`} />
                 <IconClose
                   onClick={() => setToogleMenu(false)}
                   className={`w-7 stroke-black dark:stroke-white cursor-pointer`}
@@ -64,7 +66,10 @@ const Navbar = () => {
               </div>
               <div className={`flex flex-col`}>
                 {NavItem.map((item, i) => (
-                  <div key={i} className={`p-6 hover:bg-gray-100 duration-300`}>
+                  <div
+                    key={i}
+                    className={`p-4  hover:bg-gray-100 rounded dark:hover:bg-slate-600 duration-300`}
+                  >
                     <span className={`text-base font-semibold`}>
                       {item.name}
                     </span>
