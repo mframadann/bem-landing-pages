@@ -116,3 +116,21 @@ export const ArrowRight = (props) => {
     </svg>
   );
 };
+
+export const CarouselControllerIcon = (props) => {
+  return (
+    <svg
+      {...props}
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16.3333 21L9.33331 14L16.3333 7L17.9666 8.63333L12.6 14L17.9666 19.3667L16.3333 21Z"
+        fill="#217BF4"
+      />
+    </svg>
+  );
+};
