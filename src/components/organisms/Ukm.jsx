@@ -35,6 +35,7 @@ const Ukm = () => {
 
       <div className="w-full py-20 px-6 lg:px-0">
         <Carousel
+          swipeable={true}
           draggable={true}
           showDots={false}
           responsive={responsive}
