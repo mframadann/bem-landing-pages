@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section className="w-full max-w-6xl gap-14 flex flex-col lg:flex-row justify-between py-20 mx-auto">
       <div className="w-full gap-8 flex flex-col lg:flex-row">
         <Flip left cascade>
-          <div className="grid gap-8 px-4 lg:px-0 lg:grid-cols-2 w-full ">
+          <div className="grid gap-8 px-6 lg:px-0 lg:grid-cols-2 w-full ">
             <div className="lg:aspect-square rounded-2xl overflow-hidden aspect-[3/2] cursor-pointer group">
               <img
                 src="https://picsum.photos/id/239/200/300"

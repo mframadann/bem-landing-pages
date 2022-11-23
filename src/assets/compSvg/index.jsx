@@ -67,6 +67,28 @@ export const IconSun = (props) => {
     </svg>
   );
 };
+
+export const Check = (props) => {
+  return (
+    <svg
+      {...props}
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.125 3.37549L4.875 8.62526L2.25 6.00049"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
 export const ArrowRight = (props) => {
   return (
     <svg

@@ -47,7 +47,7 @@ const Navbar = () => {
             {/* Toogle Menu */}
             <IconMenu
               onClick={() => setToogleMenu(true)}
-              className={`lg:hidden w-6 stroke-black cursor-pointer`}
+              className={`lg:hidden w-6 stroke-black dark:stroke-white cursor-pointer`}
             />
 
             {/* Navbar Item Mobile */}
@@ -59,7 +59,7 @@ const Navbar = () => {
               <div className={`flex justify-end p-6`}>
                 <IconClose
                   onClick={() => setToogleMenu(false)}
-                  className={`w-7 stroke-black cursor-pointer`}
+                  className={`w-7 stroke-black dark:stroke-white cursor-pointer`}
                 />
               </div>
               <div className={`flex flex-col`}>
