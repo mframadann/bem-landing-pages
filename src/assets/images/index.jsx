@@ -1,6 +1,7 @@
 export { default as ImageBEM } from "./ImageBEM.png";
 export { default as ImageBEMFooter } from "./logoBemFooter.png";
 export { default as HeroImage } from "./HeroIlustration.png";
+export { default as AboutImage } from "./AboutIlustration.png";
 export { default as UkmBorderImage } from "./ukmborder.png";
 export { default as MockupIlustration } from "./mobileMockupIlustration.png";
 

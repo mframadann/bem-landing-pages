@@ -6,7 +6,7 @@ import { CarouselBreakpointsConfig, UkmData } from "../../contants";
 
 const Ukm = () => {
   return (
-    <div className="w-full max-w-6xl py-20 mx-auto">
+    <div id="organization" className="w-full max-w-6xl py-20 mx-auto">
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-4 items-center">
         <SectionLabel title="Ukm & Hima" />
         <h1 className="text-2xl lg:text-4xl break-normal leading-tight text-center dark:text-gray-300 font-bold">

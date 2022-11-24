@@ -31,47 +31,47 @@ const UkmData = [
   },
   {
     name: "Himatif",
-    socialMedia: "@himatif",
+    socialMedia: "@himatifikmicirebon",
     logo: Himatif,
   },
   {
     name: "Mns",
-    socialMedia: "@example",
+    socialMedia: "@mns.ikmi",
     logo: Mns,
   },
   {
     name: "Ldk",
-    socialMedia: "@example",
+    socialMedia: "@ldkalhidayah_",
     logo: Ldk,
   },
   {
     name: "Gematika",
-    socialMedia: "@example",
+    socialMedia: "@ukmmapalastmikikmicirebon",
     logo: Gematika,
   },
   {
     name: "Himsic Galuh",
-    socialMedia: "@example",
+    socialMedia: "@himsic_galuh",
     logo: Himsic,
   },
   {
     name: "Musik",
-    socialMedia: "@example",
+    socialMedia: "@ikmimusik",
     logo: Music,
   },
   {
     name: "Futsal",
-    socialMedia: "@example",
+    socialMedia: "@futsalstmikikmi.cirebon",
     logo: Futsal,
   },
   {
     name: "Voli",
-    socialMedia: "@example",
+    socialMedia: "@ivoc_19",
     logo: Voli,
   },
   {
     name: "ICRT",
-    socialMedia: "@example",
+    socialMedia: "@icrtikmi",
     logo: Icrt,
   },
 ];

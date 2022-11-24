@@ -2,7 +2,10 @@ import { SectionLabel } from "../atoms";
 
 const MinistrySection = () => {
   return (
-    <div className="w-full bg-gradient-to-t from-[#F8F1FD] to-secondary dark:bg-gradient-to-t dark:from-slate-900 dark:to-slate-900">
+    <div
+      id="ministry"
+      className="w-full bg-gradient-to-t from-[#F8F1FD] to-secondary dark:bg-gradient-to-t dark:from-slate-900 dark:to-slate-900"
+    >
       <div className="w-full max-w-6xl py-20 mx-auto">
         <div className="flex flex-col w-full max-w-md gap-4 items-center mx-auto">
           <SectionLabel title="Kementtrian" />

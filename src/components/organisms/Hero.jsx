@@ -6,11 +6,14 @@ import { SectionLabel } from "../atoms";
 
 const Hero = () => {
   return (
-    <div className="w-full items-center justify-center py-20 gap-6 flex lg:flex-row flex-col-reverse lg:px-0 px-4 max-w-6xl mx-auto">
+    <div
+      id="home"
+      className="w-full items-center justify-center py-20 gap-6 flex lg:flex-row flex-col-reverse lg:px-0 px-4 max-w-6xl mx-auto"
+    >
       <Fade left cascade>
         <div className="flex max-w-lg flex-col gap-6 mx-auto lg:mx-0">
           <SectionLabel title="By Kemenristek" />
-          <h1 className="text-6xl leading-tight dark:text-gray-300 font-bold">
+          <h1 className="lg:text-6xl text-4xl leading-tight dark:text-gray-300 font-bold">
             Badan Eksekutif Mahasiswa
           </h1>
           <p className="text-md text-[#656464] dark:text-gray-400">

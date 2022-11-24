@@ -1,19 +1,19 @@
 const NavItem = [
   {
-    name: "Home",
-    href: "/",
+    name: "Beranda",
+    href: "#home",
   },
   {
-    name: "Community",
-    href: "/community",
+    name: "Misi bem",
+    href: "#about",
   },
   {
-    name: "Blog",
-    href: "/blog",
+    name: "Kementrian",
+    href: "#ministry",
   },
   {
-    name: "Events",
-    href: "/events",
+    name: "Ukm & Hima",
+    href: "#organization",
   },
 ];
 

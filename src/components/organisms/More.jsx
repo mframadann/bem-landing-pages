@@ -3,7 +3,10 @@ import { SectionLabel } from "../atoms";
 
 const MoreSection = () => {
   return (
-    <div className="w-full lg:h-[35rem] bg-brand dark:bg-slate-900 bg-opacity-20 lg:px-0 pt-20">
+    <div
+      id="more"
+      className="w-full lg:h-[35rem] bg-brand dark:bg-slate-900 bg-opacity-20 lg:px-0 pt-20"
+    >
       <div className="w-full max-w-6xl mx-auto h-full flex flex-col gap-6 lg:flex-row justify-between">
         <div className="w-full h-full flex px-6 lg:px-0 justify-center flex-col gap-6">
           <SectionLabel title="Ikuti Kami" />

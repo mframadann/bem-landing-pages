@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { IconClose, IconMenu, IconMoon, IconSun } from "../../assets/compSvg";
+import {
+  IconClose,
+  IconDropdown,
+  IconMenu,
+  IconMoon,
+  IconSun,
+} from "../../assets/compSvg";
 import { ImageBEM } from "../../assets/images";
 import { NavItem } from "../../contants";
 import { DarkMode } from "../../helpers";
@@ -7,6 +13,7 @@ import { DarkMode } from "../../helpers";
 const Navbar = () => {
   const [toogleMenu, setToogleMenu] = useState(false);
   const [colorTheme, setTheme] = DarkMode();
+  const [dropDown, setDropDown] = useState(false);
 
   return (
     <>
@@ -22,13 +29,47 @@ const Navbar = () => {
             {/* Navbar Item Desktop */}
             <div className={`hidden lg:flex items-center justify-center gap-8`}>
               {NavItem.map((item, i) => (
-                <span
+                <a
+                  href={item.href}
                   key={i}
                   className={`text-sm font-semibold cursor-pointer hover:text-brand duration-300`}
                 >
                   {item.name}
-                </span>
+                </a>
               ))}
+              <div className="relative">
+                <div
+                  className={`${
+                    dropDown ? "flex" : "hidden"
+                  } w-36 px-4 py-4 border border-gray-200 rounded-lg bg-white dark:bg-slate-900 shadow-md dark:shadow-none dark:border-none shadow-gray-200 absolute justify-center -bottom-28  text-sm flex-col gap-4`}
+                >
+                  <a
+                    href="#more"
+                    className={`text-sm font-semibold cursor-pointer hover:text-brand duration-300`}
+                  >
+                    Example
+                  </a>
+                  <a
+                    href="#more"
+                    className={`text-sm font-semibold cursor-pointer hover:text-brand duration-300`}
+                  >
+                    Ikuti Kami
+                  </a>
+                </div>
+                <span
+                  onClick={() => setDropDown(!dropDown)}
+                  className={`${
+                    dropDown ? "text-brand" : ""
+                  } text-sm flex items-center justify-center gap-2 font-semibold cursor-pointer hover:text-brand duration-300`}
+                >
+                  Lainnya
+                  <IconDropdown
+                    className={`${
+                      dropDown ? "rotate-180 stroke-brand" : ""
+                    } transition-all duration-300`}
+                  />
+                </span>
+              </div>
             </div>
 
             {/* Toogle Darkmode */}
