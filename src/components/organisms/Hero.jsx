@@ -21,7 +21,7 @@ const Hero = () => {
             revolusioner, sehingga terciptanya mahasiswa yang kritis, aktif, dan
             berkualitas.
           </p>
-          <button className="flex group bg-transparent items-center justify-center focus:ring-4 transition-all duaration-300 focus:ring-brand focus:ring-opacity-30 text-base font-semibold border-2 rounded-full border-brand gap-2 text-brand w-48 h-14">
+          <button className="flex group bg-transparent items-center justify-center focus:ring-4 transition-all duaration-300 focus:ring-brand focus:ring-opacity-30 text-base font-semibold border-2 rounded-full border-brand gap-2 text-brand p-3 lg:p-4 max-w-xs lg:w-1/2">
             Get Started
             <ArrowRight className="group-hover:translate-x-1 transition-all duration-300" />
           </button>

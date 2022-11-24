@@ -19,7 +19,7 @@ const AboutSection = () => {
       <Fade right cascade>
         <div className="w-full flex flex-col justify-center px-10 gap-4">
           <SectionLabel title="Tentang kami" />
-          <h1 className="text-4xl dark:text-gray-300 font-bold leading-normal">
+          <h1 className="lg:text-4xl text-2xl dark:text-gray-300 font-bold leading-normal">
             Misi BEM STMIK IKMI Cirebon
           </h1>
           {MissionItem?.map((item) => (
