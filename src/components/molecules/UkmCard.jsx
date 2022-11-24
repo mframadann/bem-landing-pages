@@ -20,7 +20,7 @@ const UkmCard = ({ title, socialMedia, image }) => {
           target="_blank"
           className="lg:text-base text-xs hover:underline cursor-pointer font-medium hover:text-gray-700 text-gray-400"
         >
-          Follow
+          Selengkapnya
         </a>
       </div>
     </div>
