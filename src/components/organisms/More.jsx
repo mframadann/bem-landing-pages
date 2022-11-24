@@ -14,9 +14,8 @@ const MoreSection = () => {
             Ikuti instagram kami untuk informasi lebih lanjut!
           </h1>
           <p className="text-md text-[#656464] dark:text-gray-400">
-            mewujudkan badan eksekutif mahasiswa STMIK IKMI kearah progresif,
-            revolusioner, sehingga terciptanya mahasiswa yang kritis, aktif, dan
-            berkualitas.
+            Yuk ikuti instagram kami untuk mendapatkan informasi dan kegiatan
+            dari BEM STMIK IKMI Cirebon!!
           </p>
           <button className="flex group bg-brand items-center justify-center focus:ring-4 transition-all duaration-300 focus:ring-brand focus:ring-opacity-40 text-base font-semibold rounded-full  gap-2 w-48 h-14 text-white">
             Ikuti sekarang

@@ -5,7 +5,7 @@ import { SocialMedia } from "../atoms";
 
 const Footer = () => {
   return (
-    <div className="w-full  dark:bg-black dark:bg-opacity-30 bg-footer-primary">
+    <div className="w-full  dark:bg-slate-800 dark:bg-opacity-30 bg-footer-primary">
       <div className="w-full px-8 lg:px-0 py-20 flex flex-col lg:flex-row gap-12 lg:gap-0 max-w-6xl mx-auto justify-between h-full">
         <div className="flex flex-col gap-4">
           <img src={ImageBEMFooter} alt="logo-bem-ikmi" className="w-28 h-28" />

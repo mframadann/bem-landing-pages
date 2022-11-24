@@ -5,8 +5,10 @@ export { default as AboutImage } from "./AboutIlustration.png";
 export { default as UkmBorderImage } from "./ukmborder.png";
 export { default as MockupIlustration } from "./mobileMockupIlustration.png";
 
-// ukm
+//ministry
+export { default as Kemenristek } from "./kemenristek.png";
 
+// ukm
 export { default as Adcom } from "./adcom.png";
 export { default as Icgd } from "./icgd.png";
 export { default as Ibc } from "./ibc.png";

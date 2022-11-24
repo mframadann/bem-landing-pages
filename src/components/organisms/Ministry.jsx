@@ -1,6 +1,9 @@
+import { Kemenristek } from "../../assets/images";
 import { SectionLabel } from "../atoms";
+import { CardMinistry } from "../molecules";
 
 const MinistrySection = () => {
+  let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   return (
     <div
       id="ministry"
@@ -13,13 +16,10 @@ const MinistrySection = () => {
             Struktur kementrian bem stmik ikmi cirebon
           </h1>
         </div>
-        <div className="grid w-full lg:grid-cols-2 gap-6 lg:gap-8 px-6 lg:px-0 py-20">
-          <div className="aspect-[3/1] rounded-xl dark:bg-slate-800 dark:shadow-none bg-white hover:shadow-md hover:shadow-gray-200 transition-all duration-300"></div>
-          <div className="aspect-[3/1] rounded-xl dark:bg-slate-800 dark:shadow-none bg-white hover:shadow-md hover:shadow-gray-200 transition-all duration-300"></div>
-          <div className="aspect-[3/1] rounded-xl dark:bg-slate-800 dark:shadow-none bg-white hover:shadow-md hover:shadow-gray-200 transition-all duration-300"></div>
-          <div className="aspect-[3/1] rounded-xl dark:bg-slate-800 dark:shadow-none bg-white hover:shadow-md hover:shadow-gray-200 transition-all duration-300"></div>
-          <div className="aspect-[3/1] rounded-xl dark:bg-slate-800 dark:shadow-none bg-white hover:shadow-md hover:shadow-gray-200 transition-all duration-300"></div>
-          <div className="aspect-[3/1] rounded-xl dark:bg-slate-800 dark:shadow-none bg-white hover:shadow-md hover:shadow-gray-200 transition-all duration-300"></div>
+        <div className="grid w-full lg:grid-cols-4 gap-4 md:grid-cols-3 lg:gap-8 px-6 lg:px-0 py-20">
+          {items.map((item) => (
+            <CardMinistry image={Kemenristek} />
+          ))}
         </div>
       </div>
     </div>
